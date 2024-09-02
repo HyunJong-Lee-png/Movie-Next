@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../css/movie_detail.module.css'
 
-interface MovieDetail {
+export interface MovieDetail {
   adult: boolean,
   backdrop_path: string,
   belongs_to_collection: null | BelongsToCollection,
@@ -31,26 +31,26 @@ interface MovieDetail {
 
 }
 
-interface BelongsToCollection {
+export interface BelongsToCollection {
   id: number,
   name: string,
   poster_path: string,
   backdrop_path: string
 }
 
-interface ProductionCompanies {
+export interface ProductionCompanies {
   id: number,
   logo_path: string
   name: string;
   origin_country: string;
 }
 
-interface ProductionCountries {
+export interface ProductionCountries {
   iso_3166_1: string;
   name: string;
 }
 
-interface SpokenLanguages {
+export interface SpokenLanguages {
   english_name: string;
   iso_639_1: string;
   name: string;

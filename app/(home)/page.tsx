@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Movie from '../../components/movie';
 import styles from '../../css/home.module.css';
 
@@ -16,6 +17,11 @@ interface Movie {
   video: boolean,
   vote_average: number,
   vote_count: number
+}
+
+export const metadata: Metadata = {
+  title: 'Movies',
+  description: 'Latest Movies'
 }
 
 export default async function A() {
