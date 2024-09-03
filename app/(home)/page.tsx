@@ -33,7 +33,7 @@ export default async function A() {
     <div className={styles.wrapper}>
       {result.map(movie =>
         <Link href={`/movie/${movie.id}`} key={movie.id}>
-          <Movie id={movie.id} title={movie.title} poster_path={movie.poster_path} />
+          <Movie title={movie.title} poster_path={movie.poster_path} />
         </Link>)}
     </div>
   );
