@@ -1,7 +1,4 @@
-'use client'
-import { useRouter } from 'next/navigation';
 import styles from '../css/movie.module.css';
-import Link from 'next/link';
 
 interface MovieInfo {
   id: number
@@ -10,14 +7,12 @@ interface MovieInfo {
 }
 
 export default function HA({ id, title, poster_path }: MovieInfo) {
-  const router = useRouter();
-  const handleClick = () => {
-    router.push(`/movie/${id}`);
-  }
+  console.log('hahah')
+
   return (
     <div className={styles.movie} >
-      <img className={styles.movie_poster} src={poster_path} alt={title} onClick={handleClick} />
-      <Link href={`/movie/${id}`}><span className={styles.movie_title}>{title}</span></Link>
+      <img className={styles.movie_poster} src={poster_path} alt={title} />
+      <span className={styles.movie_title}>{title}</span>
     </div>
   );
 }

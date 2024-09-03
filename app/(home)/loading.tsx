@@ -12,7 +12,7 @@ export default function AWG() {
           key={idx}
           style={
             {
-              height: '500px',
+              height: '350px',
               background: 'linear-gradient(180deg, #8e9eab, #eef2f3)',
               borderRadius: '20px',
             }}>

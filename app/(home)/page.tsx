@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Movie from '../../components/movie';
 import styles from '../../css/home.module.css';
+import Link from 'next/link';
 
 interface Movie {
   adult: boolean,
@@ -30,7 +31,10 @@ export default async function A() {
 
   return (
     <div className={styles.wrapper}>
-      {result.map(movie => <Movie key={movie.id} id={movie.id} title={movie.title} poster_path={movie.poster_path} />)}
+      {result.map(movie =>
+        <Link href={`/movie/${movie.id}`} key={movie.id}>
+          <Movie id={movie.id} title={movie.title} poster_path={movie.poster_path} />
+        </Link>)}
     </div>
   );
 }
