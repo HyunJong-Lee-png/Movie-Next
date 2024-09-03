@@ -6,7 +6,6 @@ interface MovieInfo {
 }
 
 export default function HA({ title, poster_path }: MovieInfo) {
-  console.log('hahah')
 
   return (
     <div className={styles.movie} >

@@ -10,4 +10,10 @@
 
 .wrapper iframe{
   border-radius: 10px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.wrapper iframe:hover {
+  opacity: 1;
 }

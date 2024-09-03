@@ -15,4 +15,10 @@
 
 .wrapper li{
   font-weight: 500;
+  transition: scale 0.1s ease-in-out;
 }
+
+.wrapper li:hover{
+  scale: 1.05;
+}
+
